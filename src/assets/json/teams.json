@@ -1,0 +1,12 @@
+{"teams": [
+{"id": "fcb", "nombre": "FC Barcelona", "partidos": 10, "wins": 5, "loses": 2, "tie": 3, "puntos": [3,3,3,1,3,1,0,0,3,1] , "top": 3, "fieldname": "Camp Nou" , "league":"LaLiga", "fieldphoto":"/assets/img/fieldteams/fcb.jpg" , "photo": "/assets/img/teams/barcelona.png"},
+{"id": "drm", "nombre": "Dortmund", "partidos": 10, "wins": 5, "loses": 2, "tie": 3, "puntos": [3,3,3,1,3,1,0,0,3,1] , "top": 4, "fieldname": "Signal Iduna Park" , "league":"Bundesliga", "fieldphoto":"/assets/img/fieldteams/dort.jpg" , "photo": "/assets/img/teams/dortmund.png"},
+{"id": "juv", "nombre": "Juventus", "partidos": 10, "wins": 6, "loses": 1, "tie": 3, "puntos": [0,3,3,1,1,1,3,3,3,3] , "top": 5, "fieldname": "Estadio Juventus" , "league":"SerieA", "fieldphoto":"/assets/img/fieldteams/juv.jpg" , "photo": "/assets/img/teams/juventus.png"},
+{"id": "liv", "nombre": "Liverpool", "partidos": 10, "wins": 5, "loses": 2, "tie": 3, "puntos": [0,1,3,1,3,1,3,3,3,0] , "top": 6, "fieldname": "Anfield" , "league":"Premier League", "fieldphoto":"/assets/img/fieldteams/liv.jpg" , "photo": "/assets/img/teams/liverpool.png"},
+{"id": "mcity", "nombre": "Manchester City", "partidos": 10, "wins": 5, "loses": 3, "tie": 2, "puntos": [3,3,3,1,3,1,0,0,3,1] , "top": 1, "fieldname": "Estadio Ciudad de Mánchester" , "league":"Premier League", "fieldphoto":"/assets/img/fieldteams/mcity.jpg" , "photo": "/assets/img/teams/mancity.png"},
+{"id": "psg", "nombre": "Paris Saint-Germain", "partidos": 10, "wins": 6, "loses": 2, "tie": 2, "puntos": [0,3,3,3,0,1,3,3,3,1] , "top": 2, "fieldname": "Parque de los Príncipes" , "league":"Ligue1", "fieldphoto":"/assets/img/fieldteams/psg.jpg" , "photo": "/assets/img/teams/psg.png"},
+{"id": "rm", "nombre": "Real Madrid", "partidos": 10, "wins": 3, "loses": 3, "tie": 4, "puntos": [0,0,1,3,1,3,1,1,0,3] , "top": 7, "fieldname": "Estadio Santiago Bernabéu" , "league":"LaLiga", "fieldphoto":"/assets/img/fieldteams/rmadrid.jpg" , "photo": "/assets/img/teams/realmadrid.png"},
+{"id": "tot", "nombre": "Tottenham", "partidos": 10, "wins": 3, "loses": 3, "tie": 4, "puntos": [3,3,1,0,1,0,1,1,3,0] , "top": 8, "fieldname": "Tottenham Hotspur Stadium" , "league":"Premier League", "fieldphoto":"/assets/img/fieldteams/tot.jpg" , "photo": "/assets/img/teams/tot.png"}
+
+]
+}

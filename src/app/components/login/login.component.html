@@ -1,0 +1,24 @@
+<section class="section2">
+    <div class="box">
+        <div class="form">
+            <h3>Login</h3>
+            <form>
+                <div class="inputBx">
+                    <input type="text" placeholder="Usuario" required autofocus id="username" [(ngModel)] = "user.login" name="login">
+                    <img  src="./assets/img/login/user.png" class="imglogin">
+                </div>
+                <div class="inputBx">
+                    <input type="password"
+                    placeholder="Contraseña" required id="password" [(ngModel)] = "user.password" name="password"> 
+                    <img src="./assets/img/login/lock.png" class="imglogin">
+                </div>
+                <label class="remember"><input type="checkbox" name="remember" [(ngModel)]="remember">Recordar la contraseña</label>
+                <div class="inputBx">
+                    <button id="botonl" [routerLink]="['home']" [routerLinkActive]="['active']" (click)="login();">Acceder</button>
+                </div>
+            </form>
+            <p class="plogin">¿Olvidaste <a class="alogin"  href="#">la contraseña?</a></p>
+            <p class="plogin"> <a class="register" >Registrarse</a></p>
+        </div>
+    </div>
+</section>

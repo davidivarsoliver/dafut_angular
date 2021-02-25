@@ -1,0 +1,81 @@
+<div class="container">
+    <form class="row g-3" #formTeam="ngForm" (ngSubmit)="editar()" novalidate>
+      <div class="col-md-6">
+        <label for="identificador" class="form-label">Identificador personal del equipo</label>
+        <input type="text" class="form-control"
+        name="identificador"
+        id="identificador"
+        [(ngModel)]="team.id"
+        #inputId="ngModel"
+        required
+        minlength="3"
+        maxlength="20"
+    
+        [ngClass]="{'is-valid': inputId.valid && inputId.touched,
+        'is-invalid': inputId.invalid && inputId.touched}"
+        >
+        <div *ngIf="inputId.touched && inputId.invalid"
+           class="alert alert-danger">Identificador requerido</div>
+    
+      </div>
+      <div class="col-md-6">
+        <label for="nombre" class="form-label">Nombre del equipo</label>
+        <input type="text" class="form-control"
+        name="nombre"  id="nombre" [(ngModel)]="team.nombre"
+        #inputName="ngModel"
+        required
+        [ngClass]="{'is-valid': inputName.valid && inputName.touched,
+        'is-invalid': inputName.invalid && inputName.touched}"
+        >
+        <div *ngIf="inputName.touched && inputName.invalid"
+        class="alert alert-danger">Nombre requerido</div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="league" class="form-label">Liga donde juega</label>
+        <input type="text" class="form-control"
+        name="league"  id="league" [(ngModel)]="team.league"
+        #inputName="ngModel"
+        required
+        [ngClass]="{'is-valid': inputName.valid && inputName.touched,
+        'is-invalid': inputName.invalid && inputName.touched}"
+        >
+        <div *ngIf="inputName.touched && inputName.invalid"
+        class="alert alert-danger">Liga requerida</div>
+      </div>
+
+
+      <div class="col-md-6">
+        <label for="partidos" class="form-label">Partidos</label>
+        <input type="text" class="form-control"
+        name="partidos" id="partidos" [(ngModel)]="team.partidos"
+        #inputPartidos="ngModel"
+        required
+        pattern="^[0-9]+$"
+        appMinMatches="10"
+        [ngClass]="{'is-valid': inputPartidos.valid && inputPartidos.touched,
+        'is-invalid': inputPartidos.invalid && inputPartidos.touched}"
+          >
+          <div *ngIf="inputPartidos.touched && inputPartidos.invalid"
+        class="alert alert-danger">Introduzca un número</div>
+      </div>
+      <div class="col-12">
+        <label for="puntos" class="form-label">Puntos conseguidos</label>
+        <input type="text" class="form-control" [(ngModel)]="team.puntos"
+        name="puntos" id="puntos">
+      </div>
+      <div class="col-12">
+        <button type="submit"
+    
+        class="btn btn-primary">Actualizar</button>
+        <a [routerLink]="['/team',team.id]" class="btn btn-dark m-3">Volver al equipo</a>
+      </div>
+    </form>
+    
+    <hr>
+    <pre>
+    id: {{inputId.valid}}
+    formulario: {{formTeam.value | json}}
+    formulario valid: {{formTeam.valid}}
+    </pre>
+    </div>

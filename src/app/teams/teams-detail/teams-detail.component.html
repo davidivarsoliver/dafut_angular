@@ -1,0 +1,33 @@
+<div class="row">
+
+    <div class="col-3">
+    
+
+        <div class="card h-100">
+            <img [src]="team.photo" class="card-img-top" alt="fototeam">
+            <div class="card-body">
+                <h2 class="card-title">{{team.nombre | uppercase }} </h2>
+                <a [routerLink]="['/teams']" class="btn btn-dark">Volver al listado</a>
+                <a [routerLink]="['/team','edit',team.id]" class="btn btn-dark m-3">Editar equipo</a>
+
+
+            </div>
+        </div>
+    </div>
+    
+    <div class ="col-6">
+        <div class="card h-100">
+            <div class="card-body">
+                <h3 class="card-text">{{team.fieldname}}</h3>
+
+                <img [src]="team.fieldphoto" class="card-img-top" alt="fotofield">
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+</div>

@@ -1,0 +1,25 @@
+<table class="containerclasi">
+    <thead class="theadclasi">
+    <tr class="tr clasi">
+    <th class="thclasi"><h1 class="h1clasi">Equipo</h1></th>
+    <th class="thclasi"><h1 class="h1clasi">Liga</h1></th>
+    <th class="thclasi"><h1 class="h1clasi">Partidos jugados</h1></th>
+    <th class="thclasi"><h1 class="h1clasi">Partidos ganados</h1></th>
+    <th class="thclasi"><h1 class="h1clasi">Partidos perdidos</h1></th>
+    <th class="thclasi"><h1 class="h1clasi">Partidos empatados</h1></th>
+
+    </tr>
+</thead>
+
+<tbody class="tbodyclasi">
+    <tr class="tr clasi" *ngFor="let team of teams">
+        <td class="tdclasi">{{team.nombre}}</td>
+        <td class="tdclasi">{{team.league}}</td>
+        <td class="tdclasi">{{team.partidos}}</td>
+        <td class="tdclasi">{{team.wins}}</td>
+        <td class="tdclasi">{{team.loses}}</td>
+        <td class="tdclasi">{{team.tie}}</td>
+   
+    </tr>
+</tbody>
+</table>

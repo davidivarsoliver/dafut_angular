@@ -1,0 +1,13 @@
+<div class="container">
+<h2>Equipos</h2>
+<input type="text" name="searchTeam" id="searchTeam" placeholder="Escribe el equipo..." [(ngModel)]="value"/>
+<div class="row">
+<div class="col-12 col-sm-12 col-lg-8">
+<ul class="list-group" style="max-width: 1000px;">
+<app-teams-item [team]="team" *ngFor="let team of teams | filterTeams:value"></app-teams-item>
+</ul>
+</div>
+</div>
+</div>
+
+

@@ -1,0 +1,15 @@
+
+<li [ngStyle]="{'background-image': 'url(' + foto + ')'}"  
+class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+    <div class="" style="max-width: 100px;">
+    <img class="img-fluid rounded" [src]="team.photo">
+    </div>
+    <div>
+    <div>
+       <h3>{{team.nombre}} </h3> 
+       <p style="margin-bottom: 0;">{{team.league}}</p>
+    </div>
+    </div>
+    <a class="btn btn-dark" [routerLink]="['/team',team.id]">Detalles</a>
+</li>
+
