@@ -20,6 +20,7 @@ import { PlayersListComponent } from './players/players-list/players-list.compon
 import { TeamsEditComponent } from './teams/teams-edit/teams-edit.component';
 import { MinMatchesDirective } from './directives/directives/min-matches.directive';
 import { TeamsRankingComponent } from './teams/teams-ranking/teams-ranking.component';
+import { TeamsNewComponent } from './teams/teams-new/teams-new.component';
 
 
 @NgModule({
@@ -39,6 +40,8 @@ import { TeamsRankingComponent } from './teams/teams-ranking/teams-ranking.compo
     TeamsEditComponent,
     MinMatchesDirective,
     TeamsRankingComponent,
+    TeamsNewComponent,
+ 
     
   ],
   imports: [

@@ -9,6 +9,7 @@ import { PlayersListComponent } from './players/players-list/players-list.compon
 import { TeamsResolveService } from './teams/teams-resolve.service';
 import { TeamsEditComponent } from './teams/teams-edit/teams-edit.component';
 import { TeamsRankingComponent } from './teams/teams-ranking/teams-ranking.component';
+import { TeamsNewComponent } from './teams/teams-new/teams-new.component';
 
 const routes: Routes = [
   {path: 'home', canActivate: [AuthGuard], component: HomeComponent},
@@ -23,6 +24,10 @@ const routes: Routes = [
   canActivate: [AuthGuard],
   resolve: {team: TeamsResolveService},
   component: TeamsEditComponent},
+
+  {path: 'teams/new',
+  canActivate: [AuthGuard],
+  component: TeamsNewComponent},
 
   {path: 'ranking', canActivate: [AuthGuard], component: TeamsRankingComponent},
 

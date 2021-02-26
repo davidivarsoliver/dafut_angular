@@ -1,0 +1,33 @@
+<div class="container">
+    <h1>Nuevo equipo</h1>
+    <form [formGroup]="formulario" (ngSubmit)="crear()">
+        <div class="row mb-3">
+            <label for="inputIdentificador" class="col-sm-2 col-form-label">Identificador</label>
+            <div class="col-sm-3">
+              <textarea class="form-control" id="inputIdentificador" rows="3" formControlName="identificador"></textarea>
+            </div>
+          </div>
+      <div class="row mb-3">
+        <label for="inputName" class="col-sm-2 col-form-label">Nombre</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputName" formControlName="name">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputField" class="col-sm-2 col-form-label">Nombre del estadio</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputNameField" formControlName="nameField">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputPrice" class="col-sm-2 col-form-label">Partidos jugados</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="inputPrice" formControlName="price">
+        </div>
+      </div>
+     
+      <button type="submit" class="btn btn-success m-3">Crear</button>
+      <a [routerLink]="['/teams']" class="btn btn-dark">Volver al listado</a>
+
+    </form>
+    </div>

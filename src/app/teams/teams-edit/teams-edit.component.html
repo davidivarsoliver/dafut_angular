@@ -1,5 +1,5 @@
 <div class="container">
-    <form class="row g-3" #formTeam="ngForm" (ngSubmit)="editar()" novalidate>
+    <form class="row g-3" #formTeam="ngForm" (ngSubmit)="editar(formTeam)" novalidate>
       <div class="col-md-6">
         <label for="identificador" class="form-label">Identificador personal del equipo</label>
         <input type="text" class="form-control"
